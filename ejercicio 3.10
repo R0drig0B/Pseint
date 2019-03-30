@@ -1,0 +1,19 @@
+Algoritmo sin_titulo
+	Escribir "cantidad de alumnos :";
+	leer cant;
+	Leer apro;
+	Leer repr;
+	Leer not;
+	Leer sobr;
+	aprob<-apro*100/cant;
+	repro<-repr*100/cant;
+	nota<-not*100/cant;
+	sobre<-sobr*100/cant;
+	Escribir "numero de alumnos aprobados :",aprob;
+	Escribir "numero de alumnos reprobados :",repro;
+	Escribir "numero de alumnos notables :",nota;
+	Escribir "numero de alumnos sobresalientes :",sobre;
+	
+	
+	
+FinAlgoritmo

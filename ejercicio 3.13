@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	Escribir "ingrese monto ";
+	leer monto;
+	ganancia<-monto*8/100;
+	impues_local<-monto*3/100;
+	impues_esta<-monto*3/100;
+	total<-monto+ganancia+impues_esta+impues_local;
+	Escribir "total a pagar :",total; 
+	
+FinAlgoritmo

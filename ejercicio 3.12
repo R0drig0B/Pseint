@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Escribir "ingrese monto anual"
+	Leer monto;
+	Kine<-20*monto/100;
+	Gine<-25*monto/100;
+	Trau<-30*monto/100;
+	Pedi<-25*monto/100;
+	Escribir"monto de Kinesiologia:",Kine; 
+	Escribir "monto de Ginecologia:",Gine;
+	Escribir "monto de Traumatologia:",Trau;
+	Escribir "monto de Pediatria:",Pedi;
+	FinAlgoritmo

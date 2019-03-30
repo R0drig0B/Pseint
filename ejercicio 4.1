@@ -1,0 +1,29 @@
+Algoritmo sin_titulo
+	Dimension datos[1000]
+	
+	Escribir "Ingrese la cantidad de datos (entre 1 y 1000)";
+	Leer n;
+	Para i<-1 hasta n hacer
+		Escribir "Ingrese el dato",i,":";
+		Leer datos[i];
+	FinPara
+	si datos[1] > datos[2] Entonces
+		may<-datos[1];
+	SiNo
+		si datos[2] > datos[1] entonces
+			may<- datos[2];
+		FinSi
+		
+	FinSi
+	
+	para i<-3 hasta n hacer
+		si datos[i] > may entonces
+			may<-datos[i]
+		FinSi
+	FinPara
+	
+	Escribir "El número mayor es: ",may;
+	
+	
+	
+FinAlgoritmo

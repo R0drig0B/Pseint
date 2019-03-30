@@ -1,0 +1,41 @@
+Algoritmo sin_titulo
+	Escribir "Ingrese sueldo base";
+	Escribir " Grado 1 = 450000"
+	Escribir " Grado 2 = 550000"
+	Escribir " Grado 3 = 700000"
+	Leer sueldo;
+	Escribir "Ingrese % de descuento";
+	Escribir " Colmena = 6.5%"
+	Escribir " Ban Médica = 7.3%"
+	Escribir " Vida 3 = 7%"
+	Escribir " Fonasa = 7%"
+	Escribir " BanSantander = 12%" 
+	Escribir " Geometrica SA = 13.4%"
+	Escribir " Cumprum = 12.3%"
+	Escribir " Provida 12.9%"
+	Leer descuento;
+	descuento<-sueldo*descuento/100;
+	sueldoMasDescu<-sueldo-descuento;
+	Escribir "Ingrese Sueldo de horas trabajadas";
+	Leer sueldoHorasExt;
+	si (sueldoHorasExt = 0) Entonces
+		sueldoHorasExt<-0;
+	SiNo
+		si (sueldoHorasExt >= 1 y  sueldoHorasExt <= 3)Entonces
+			sueldoHorasExt<-2000
+		SiNo
+			si (sueldoHorasExt >= 4 y  sueldoHorasExt <= 7) Entonces
+				sueldoHorasExt<-3000
+			SiNo
+				si (sueldoHorasExt >= 7) Entonces
+					sueldoHorasExt<-3500
+				FinSi
+			FinSi
+			
+			
+		FinSi
+	FinSi
+	total<-sueldoMasDescu+sueldoHorasExt;
+	Escribir "Su sueldo total es: ",total;
+	
+FinAlgoritmo
